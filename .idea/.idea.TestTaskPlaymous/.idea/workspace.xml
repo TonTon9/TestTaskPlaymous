@@ -4,7 +4,49 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="838675c5-4b73-4dfb-96cc-d433ab061333" name="Changes" comment="feat: add basig game tiles" />
+    <list default="true" id="838675c5-4b73-4dfb-96cc-d433ab061333" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Common/IInitialize.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Common/IInitialize.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerStatsDto.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerStatsDto.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Road/IRoadGenerator.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Road/IRoadGenerator.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Road/Tiles/TileType.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Road/Tiles/TileType.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.TestTaskPlaymous/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TestTaskPlaymous/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/RunAnimation.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/RunAnimation.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/GapRoad.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/GapRoad.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/GapRoadLeft.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/GapRoadLeft.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Road.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Road.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/RoadTextureAlbedo.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/RoadTextureAlbedo.jpg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/GameTilesProps/Fence.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/GameTilesProps/Fence.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/GameTilesProps/Saws.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/GameTilesProps/Saws.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Characters.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Characters/Character Camera.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Characters/Character Camera.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Characters/Character.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Characters/Character.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Characters/CharacterModel.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Characters/CharacterModel.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/RoadTiles/BigGap.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/RoadTiles/BigGap.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/RoadTiles/FenceTile.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/RoadTiles/FenceTile.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/RoadTiles/GapTile.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/RoadTiles/GapTile.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/RoadTiles/RoadTile.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/RoadTiles/RoadTile.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/RoadTiles/RotateLeftTile.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/RoadTiles/RotateLeftTile.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/RoadTiles/RotateRightTile.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/RoadTiles/RotateRightTile.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/RoadTiles/SawTile.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/RoadTiles/SawTile.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GameScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GameScene.unity" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,8 +55,21 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Road/Tiles/Rotator/RotatorTile.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Initializers/GameCreator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock://F:/UnityProject/TestTasks/TestTaskPlaymous/Assets/Scenes/GameScene.unity" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Road/RoadGenerator.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/IPlayerModel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Road/Tiles/SimpleTile.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="2P3fRDsjV9OIKcMYnvuIz2skbS8" />
   <component name="ProjectViewState">
@@ -63,7 +118,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1682690678740</updated>
-      <workItem from="1682690702772" duration="665000" />
+      <workItem from="1682690702772" duration="19299000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1682690741692</created>
@@ -79,7 +134,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682694722603</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="feat: import UniRx and UniTask">
+      <created>1682696075750</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1682696075750</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -103,6 +165,7 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="initial commit" />
     <MESSAGE value="feat: add basig game tiles" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add basig game tiles" />
+    <MESSAGE value="feat: import UniRx and UniTask" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: import UniRx and UniTask" />
   </component>
 </project>
