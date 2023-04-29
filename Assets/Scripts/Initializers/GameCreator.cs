@@ -1,5 +1,4 @@
 using Cysharp.Threading.Tasks;
-using Road;
 using UnityEngine;
 
 namespace Game
@@ -13,14 +12,16 @@ namespace Game
 
         private async void SetUpGameScene()
         {
-            await SpawnAndStartRoadGenerator();
+            await CreateEntityAndWaitUntilInitialize("GameScene/RoadGenerator");
+            await CreateEntityAndWaitUntilInitialize("GameScene/PlayerCreator");
+            await CreateEntityAndWaitUntilInitialize("GameScene/GameCanvas");
         }
 
-        private UniTask SpawnAndStartRoadGenerator()
+        private UniTask CreateEntityAndWaitUntilInitialize(string entityPath)
         {
-            var roadGeneratorPrefab = Resources.Load<GameObject>("GameScene/RoadGenerator");
-            var roadGeneratorInstance = Instantiate(roadGeneratorPrefab).GetComponent<IRoadGenerator>();
-            roadGeneratorInstance.GenerateRoad();
+            var playerCreatorPrefab = Resources.Load<GameObject>(entityPath);
+            var roadGeneratorInstance = Instantiate(playerCreatorPrefab).GetComponent<ICreator>();
+            roadGeneratorInstance.Create();
             return UniTask.WaitUntil(() => roadGeneratorInstance.IsInitialize);
         }
     }

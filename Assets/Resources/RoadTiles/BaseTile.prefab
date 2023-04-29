@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3675288403931569341}
   - component: {fileID: 6359639777713851085}
+  - component: {fileID: 7756566260398505516}
   m_Layer: 0
   m_Name: BaseTile
   m_TagString: Untagged
@@ -49,7 +50,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <NextTileSpawnPoint>k__BackingField: {fileID: 3295837941515612698}
   <TileType>k__BackingField: 0
-  _exclusionTiles: []
+  nextTiles: 
+--- !u!65 &7756566260398505516
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3675288403931569342}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3, y: 5, z: 0.72420716}
+  m_Center: {x: 0, y: 0.68706775, z: 3.115004}
 --- !u!1 &3675288404726946315
 GameObject:
   m_ObjectHideFlags: 0

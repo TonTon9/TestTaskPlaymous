@@ -1,32 +1,22 @@
-using Player.Movement;
+using Component.Base;
+using Player.Entity;
 using UnityEngine;
 
-public class RotatorTile : BaseOnTriggerAction
+namespace Component
 {
-    [SerializeField]
-    private RotateType _rotateType;
-    protected override void ActionOnTriggerEnter(Collider collider)
+    public class RotatorTile : BaseOnTriggerAction
     {
-        if (collider.TryGetComponent(out IPlayerView view))
+        [SerializeField]
+        private RotateType _rotateType;
+
+        protected override void ActionOnTriggerEnter(Collider collider)
         {
-            view.Rotate(_rotateType);
+            if (!_isActivated &&  collider.TryGetComponent(out IPlayerView view))
+            {
+                _isActivated = true;
+                view.Rotate(_rotateType);
+            }
         }
     }
-}
 
-public abstract class BaseOnTriggerAction : MonoBehaviour
-{
-
-    private void OnTriggerExit(Collider other)
-    {
-        ActionOnTriggerEnter(other);
-    }
-
-    protected abstract void ActionOnTriggerEnter(Collider collider);
-}
-
-public enum RotateType
-{
-    Right,
-    Left
 }

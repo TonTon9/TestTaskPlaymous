@@ -1,13 +1,13 @@
+using Component;
 using UniRx;
-using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 namespace Player.Movement
 {
     public class PlayerMovement : IMove
     {
-        private const float GRAVITY_POWER = 10f;
-        private const float JUMP_POWER = 5f;
+        private const float GRAVITY_POWER = 40f;
+        private const float JUMP_POWER = 9f;
         
         private CharacterController _characterController;
         private float _moveSpeed;
@@ -56,7 +56,18 @@ namespace Player.Movement
                 _countOfJumps++;
             }
         }
-        
+
+        public void Rotate(RotateType rotateType)
+        {
+            if (rotateType == RotateType.Left)
+            {
+                _playerTransform.Rotate(new Vector3(0,-90f,0));
+            } else
+            {
+                _playerTransform.Rotate(new Vector3(0,90f,0));
+            }
+        }
+
         private void CustomGravity()
         {
             if (!_characterController.isGrounded)

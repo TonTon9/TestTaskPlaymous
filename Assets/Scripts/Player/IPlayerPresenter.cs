@@ -1,7 +1,8 @@
-﻿namespace Player.Movement
+﻿namespace Player.Entity
 {
-    public interface IPlayerPresenter
+    public interface IPlayerPresenter : IDamagable
+
     {
-        void Update();
     }
+
 }

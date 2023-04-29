@@ -1,40 +1,43 @@
 ﻿using System;
-using DG.Tweening;
+using Component;
+using Player.Entity;
 using UnityEngine;
 
 namespace Player.Movement
 {
     public class PlayerView : MonoBehaviour, IPlayerView
     {
-        private IPlayerModel _playerModel;
+        public IPlayerModel PlayerModel { get; private set; }
+        private IPlayerPresenter _playerPresenter;
 
         public event Action OnTap = delegate { };
         public event Action OnDoubleTap = delegate { };
+        public event Action<RotateType> OnRotate = delegate {};
         public event Action OnRun;
 
         private float _lastTapTime;
         private float _doubleTapThreshold = 0.3f;
         
-        public void Init(IPlayerModel model)
+        public void Init(IPlayerPresenter playerPresenter, IPlayerModel model)
         {
-            _playerModel = model;
+            _playerPresenter = playerPresenter;
+            PlayerModel = model;
         }
-        
+
         public void Rotate(RotateType rotateType)
         {
-            if (rotateType == RotateType.Left)
-            {
-                transform.DORotate(new Vector3(0,90f,0), 0.5f);
-            } else
-            {
-                transform.DORotate(new Vector3(0,-90f,0), 0.5f);
-            }
+            OnRotate?.Invoke(rotateType);
+        }
+        
+        public void TakeDamage(int damage)
+        {
+            _playerPresenter.TakeDamage(damage);
         }
 
         private void Update()
         {
             OnRun?.Invoke();
-            if (!_playerModel.IsAlive.Value)
+            if (!PlayerModel.IsAlive.Value)
             {
                 return;
             }

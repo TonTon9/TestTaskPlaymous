@@ -1,4 +1,6 @@
-﻿namespace Player.Movement
+﻿using Player.Entity;
+
+namespace Player.Movement
 {
     public class PlayerPresenter : IPlayerPresenter
     {
@@ -13,21 +15,19 @@
             _move = new PlayerMovement(_playerView.GetOwnGameObject(), _playerModel.Speed);
             _playerView.OnTap += _move.Jump;
             _playerView.OnRun += _move.Move;
-        }
-
-        public void Update()
-        {
-            if (!_playerModel.IsAlive.Value)
-            {
-                return;
-            }
-            _move.Move();
+            _playerView.OnRotate += _move.Rotate;
         }
 
         ~PlayerPresenter()
         {
             _playerView.OnTap -= _move.Jump;
             _playerView.OnRun -= _move.Move;
+            _playerView.OnRotate -= _move.Rotate;
+        }
+
+        public void TakeDamage(int damage)
+        {
+            _playerModel.SetHealth(_playerModel.Health.Value - damage);
         }
     }
 }

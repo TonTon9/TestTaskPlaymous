@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 736895881742534359}
   - component: {fileID: 8502070727098698138}
+  - component: {fileID: 6217112480509351437}
   m_Layer: 0
   m_Name: Saws
   m_TagString: Untagged
@@ -44,11 +45,23 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 752055374374626107}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3, y: 1, z: 0.3484707}
-  m_Center: {x: 0, y: 0, z: 0.07452297}
+  m_Size: {x: 3, y: 0.57503295, z: 0.07043874}
+  m_Center: {x: 0, y: 0.08308303, z: -0.0043817163}
+--- !u!114 &6217112480509351437
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 752055374374626107}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 903e959fafec4961a6bfaea8569a24c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1070682747527374706
 GameObject:
   m_ObjectHideFlags: 0
@@ -149,7 +162,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6365899455381261092, guid: a5a512aad6c5d044f8e94cbbe7171838, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.03699994
+      value: 0.07800007
       objectReference: {fileID: 0}
     - target: {fileID: 6365899455381261092, guid: a5a512aad6c5d044f8e94cbbe7171838, type: 3}
       propertyPath: m_LocalPosition.z
@@ -211,7 +224,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6365899455381261092, guid: a5a512aad6c5d044f8e94cbbe7171838, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.03699994
+      value: 0.07800007
       objectReference: {fileID: 0}
     - target: {fileID: 6365899455381261092, guid: a5a512aad6c5d044f8e94cbbe7171838, type: 3}
       propertyPath: m_LocalPosition.z
@@ -273,7 +286,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6365899455381261092, guid: a5a512aad6c5d044f8e94cbbe7171838, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.03699994
+      value: 0.078
       objectReference: {fileID: 0}
     - target: {fileID: 6365899455381261092, guid: a5a512aad6c5d044f8e94cbbe7171838, type: 3}
       propertyPath: m_LocalPosition.z
