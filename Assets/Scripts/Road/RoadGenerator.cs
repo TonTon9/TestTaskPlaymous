@@ -7,39 +7,52 @@ using Random = UnityEngine.Random;
 
 namespace Road
 {
-    public class RoadGenerator : MonoBehaviour, ICreator
+    public class RoadGenerator : BaseManager<RoadGenerator>, IManager
     {
-        private const int MIN_COUNT_OF_TILES_BTW_CORNERS = 15;
-        private const int START_COUNT_OF_TILES = 25;
-        private const int COINT_OF_SIMPLE_ROAD_TILES_IN_THE_START = 4;
-        private const int COINT_OFF_TILES_BEFORE_SPAWNINNG_NEXT_TILES = 3;
+        private const string TILE_PREFABS_PATH = "RoadTiles/Variants";
+        private const string ROAD_SETTINGS_PATH = "Dtos/RoadGeneratorSettings";
         
+        public event Action<Dictionary<TileType, List<SimpleTile>>> OnFinishTileReached = delegate {};
+        public event Action<SimpleTile> OnTileSpawned = delegate {  };
+
+        public Dictionary<TileType, List<SimpleTile>> CompletedTiles = new();
+
         private List<SimpleTile> _tilesPrefabs = new ();
         private List<SimpleTile> _spawnedTiles = new ();
 
+        private RoadGeneratorSettings _roadSettings;
         private SimpleTile _lastTile;
         private int _countOfTilesAfterLastCorner;
         private int _completedTilesCount;
-        
-        public bool IsInitialize { get; private set; }
-        public void Create()
+        private int _countOfSpawnedTiles;
+
+        public override void Initialize()
         {
-            LoadTilesFromResources();
+            base.Initialize();
+            LoadTilesAndSettingsFromResources();
             var road = GetTilePrefabByType(TileType.SimpleRoad);
-            for (int i = 0; i < COINT_OF_SIMPLE_ROAD_TILES_IN_THE_START; i++)
+            for (int i = 0; i < _roadSettings.CountOfSimpleRoadTilesInTheStart; i++)
             {
                 SpawnNewTile(road);
             }
-            for (int i = 0; i < START_COUNT_OF_TILES; i++)
+            for (int i = 0; i < _roadSettings.StartCountOfTiles; i++)
             {
                 SpawnRandomTile();
             }
             IsInitialize = true;
         }
-
-        private void LoadTilesFromResources()
+        
+        private void SpawnRandomTile()
         {
-            _tilesPrefabs = Resources.LoadAll<SimpleTile>("RoadTiles/Variants").ToList();
+            if(_lastTile.TileType == TileType.Finish) return;
+            
+            if (_countOfSpawnedTiles >= _roadSettings.RoadLenght)
+            {
+                var finish = GetTilePrefabByType(TileType.Finish);
+                SpawnNewTile(finish);
+                return;
+            }
+            SpawnNewTile(GetRandomTile());
         }
 
         private void SpawnNewTile(SimpleTile tile)
@@ -51,9 +64,18 @@ namespace Road
             {
                 _lastTile = Instantiate(tile, _lastTile.NextTileSpawnPoint.position, _lastTile.NextTileSpawnPoint.rotation);   
             }
-
+            _countOfSpawnedTiles++;
             _spawnedTiles.Add(_lastTile);
-            _lastTile.OnPlayerExitTile += ActionOnPlayerExitTile;
+            OnTileSpawned?.Invoke(_lastTile);
+
+            if (_lastTile.TileType == TileType.Finish)
+            {
+                _lastTile.OnPlayerExitTile += ReachFinishTile;
+            } else
+            {
+                _lastTile.OnPlayerExitTile += ActionOnPlayerExitTile;
+            }
+            
             if (_lastTile.TileType == TileType.LeftCorner || _lastTile.TileType == TileType.RightCorner)
             {
                 _countOfTilesAfterLastCorner = 0;
@@ -63,14 +85,35 @@ namespace Road
             }
         }
 
-        private void ActionOnPlayerExitTile()
+        private void SpawnTile(SimpleTile tile)
+        {
+            if (_lastTile == null)
+            {
+                _lastTile = Instantiate(tile);    
+            } else
+            {
+                _lastTile = Instantiate(tile, _lastTile.NextTileSpawnPoint.position, _lastTile.NextTileSpawnPoint.rotation);   
+            }
+
+            _countOfSpawnedTiles++;
+            _spawnedTiles.Add(_lastTile);
+            OnTileSpawned?.Invoke(_lastTile);
+        }
+
+        private void ActionOnPlayerExitTile(SimpleTile tile)
         {
             _completedTilesCount++;
-            if(_completedTilesCount < COINT_OFF_TILES_BEFORE_SPAWNINNG_NEXT_TILES) return;
+            if (!CompletedTiles.ContainsKey(tile.TileType))
+            {
+                CompletedTiles.Add(tile.TileType, new List<SimpleTile>());
+            } 
+            CompletedTiles[tile.TileType].Add(tile);
+            
+            if(_completedTilesCount < _roadSettings.CountOfTilesBeforeSpawningNewTiles) return;
             DeleteFirstTile();
             SpawnRandomTile();
         }
-        
+
         private void DeleteFirstTile()
         {
             var tile = _spawnedTiles[0];
@@ -79,11 +122,6 @@ namespace Road
             Destroy(tile.gameObject);
         }
 
-        private void SpawnRandomTile()
-        {
-            SpawnNewTile(GetRandomTile());
-        }
-        
         private SimpleTile GetRandomTile()
         {
             var tileType = _lastTile.nextTiles[Random.Range(0, _lastTile.nextTiles.Count)];
@@ -96,12 +134,17 @@ namespace Road
 
             if (newTile.TileType == TileType.LeftCorner || newTile.TileType == TileType.RightCorner)
             {
-                if (_countOfTilesAfterLastCorner < MIN_COUNT_OF_TILES_BTW_CORNERS)
+                if (_countOfTilesAfterLastCorner < _roadSettings.MinCountOfTilesBtwCorners)
                 {
                     newTile = GetRandomTile();
                 }
             }
             return newTile;
+        }
+        
+        private void ReachFinishTile(SimpleTile tile)
+        {
+            OnFinishTileReached?.Invoke(CompletedTiles);
         }
 
         private SimpleTile GetTilePrefabByType(TileType tileType)
@@ -113,12 +156,24 @@ namespace Road
             } 
             throw new Exception("Have no tile prefab with this type");
         }
+        
+        private void LoadTilesAndSettingsFromResources()
+        {
+            _tilesPrefabs = Resources.LoadAll<SimpleTile>(TILE_PREFABS_PATH).ToList();
+            _roadSettings = Resources.Load<RoadGeneratorSettings>(ROAD_SETTINGS_PATH);
+        }
 
         private void OnDestroy()
         {
             foreach (var tile in _spawnedTiles)
             {
-                tile.OnPlayerExitTile -= ActionOnPlayerExitTile;
+                if (tile.TileType == TileType.Finish)
+                {
+                    tile.OnPlayerExitTile -= ReachFinishTile;
+                } else
+                {
+                    tile.OnPlayerExitTile -= ActionOnPlayerExitTile;
+                }
             }
         }
     }

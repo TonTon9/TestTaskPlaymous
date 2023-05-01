@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35f60ef97e7d4e3598a015baff8af4d3, type: 3}
   m_Name: PlayerStats
   m_EditorClassIdentifier: 
-  <Health>k__BackingField: 10
+  <Health>k__BackingField: 2
   <Speed>k__BackingField: 5

@@ -8,6 +8,7 @@ namespace Road
         Saw,
         Fence,
         LeftCorner,
-        RightCorner
+        RightCorner,
+        Finish
     }
 }

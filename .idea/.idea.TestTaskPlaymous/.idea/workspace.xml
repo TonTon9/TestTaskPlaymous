@@ -5,96 +5,46 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="838675c5-4b73-4dfb-96cc-d433ab061333" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Initializers/ICreator.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Initializers/ICreator.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Player/IDamagable.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Player/IDamagable.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerCameraHolder.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerCameraHolder.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Road/Tiles/Rotator/BaseOnTriggerAction.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Road/Tiles/Rotator/BaseOnTriggerAction.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Road/Tiles/Rotator/DamageBlock.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Road/Tiles/Rotator/DamageBlock.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Road/Tiles/Rotator/RotateType.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Road/Tiles/Rotator/RotateType.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/DamageEffectUI.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/DamageEffectUI.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/IDamageEffectUI.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/IDamageEffectUI.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Boosters/BoostType.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Boosters/BoostType.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Boosters/BoosterGameObject.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Boosters/BoosterGameobject.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Boosters/BoosterType.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Boosters/BoosterType.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Boosters/ImmuneBoosterSetting.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Boosters/ImmuneBoosterSetting.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Boosters/SpeedBoosterSetting.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Boosters/SpeedBoosterSetting.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Common/BaseButtonComponent.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Common/BaseButtonComponent.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/GameStates.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/GameStates.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Player/IPlayerAnimation.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Player/IPlayerAnimation.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Road/RoadGeneratorSettings.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Road/RoadGeneratorSettings.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/BaseScreen.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/BaseScreen.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/CompletedTileUIItem.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/CompletedTileUIItem.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/ContinueGameButton.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/ContinueGameButton.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/ListOfCompletedTilesUI.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/ListOfCompletedTilesUI.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/LoseGamePopup.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/LoseGamePopup.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/RestartGameButton.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/RestartGameButton.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/WinGamePopup.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/WinGamePopup.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TestTaskPlaymous/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TestTaskPlaymous/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/BEDRILL.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/BEDRILL/Modular_Track_Free.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/BEDRILL/Modular_Track_Free/Material.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/BEDRILL/Modular_Track_Free/Material/Plane.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/BEDRILL/Modular_Track_Free/Material/Plane.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/BEDRILL/Modular_Track_Free/Material/Trek_Material_free.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/BEDRILL/Modular_Track_Free/Material/Trek_Material_free.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/BEDRILL/Modular_Track_Free/Models.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/BEDRILL/Modular_Track_Free/Models/Track_Corner_90d_type_01_15x15m_quad_free.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/BEDRILL/Modular_Track_Free/Models/Track_Corner_90d_type_01_15x15m_quad_free.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/BEDRILL/Modular_Track_Free/Models/Track_Fence_line_type_01_15m_free.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/BEDRILL/Modular_Track_Free/Models/Track_Fence_line_type_01_15m_free.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/BEDRILL/Modular_Track_Free/Models/Track_line_type_01_15m_free.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/BEDRILL/Modular_Track_Free/Models/Track_line_type_01_15m_free.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/BEDRILL/Modular_Track_Free/Models/Track_line_type_01_start_finish_15m_free.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/BEDRILL/Modular_Track_Free/Models/Track_line_type_01_start_finish_15m_free.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/BEDRILL/Modular_Track_Free/Prefabs_Obs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/BEDRILL/Modular_Track_Free/Prefabs_Obs/Track_Corner_90d_type_01_15x15m_quad_free_obs.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/BEDRILL/Modular_Track_Free/Prefabs_Obs/Track_Corner_90d_type_01_15x15m_quad_free_obs.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/BEDRILL/Modular_Track_Free/Prefabs_Obs/Track_Fence_line_type_01_15m_free_obs.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/BEDRILL/Modular_Track_Free/Prefabs_Obs/Track_Fence_line_type_01_15m_free_obs.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/BEDRILL/Modular_Track_Free/Prefabs_Obs/Track_line_type_01_15m_free_obs.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/BEDRILL/Modular_Track_Free/Prefabs_Obs/Track_line_type_01_15m_free_obs.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/BEDRILL/Modular_Track_Free/Prefabs_Obs/Track_line_type_01_start_finish_15m_free_obs.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/BEDRILL/Modular_Track_Free/Prefabs_Obs/Track_line_type_01_start_finish_15m_free_obs.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/BEDRILL/Modular_Track_Free/Textures.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/BEDRILL/Modular_Track_Free/Textures/Track_Texture_free.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/BEDRILL/Modular_Track_Free/Textures/Track_Texture_free.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/CharacterController.controller" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/CharacterController.controller.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/RunAnimation.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/RunAnimation.anim.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Free Stylized Skybox.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Free Stylized Skybox/CubeMap.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Free Stylized Skybox/CubeMap/Materials.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Free Stylized Skybox/CubeMap/Materials/Sky_Anime_03_Day_a.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Free Stylized Skybox/CubeMap/Materials/Sky_Anime_03_Day_a.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Free Stylized Skybox/CubeMap/Materials/Sky_Anime_11_morning_a.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Free Stylized Skybox/CubeMap/Materials/Sky_Anime_11_morning_a.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Free Stylized Skybox/CubeMap/Materials/Sky_Anime_15_Day_a.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Free Stylized Skybox/CubeMap/Materials/Sky_Anime_15_Day_a.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Free Stylized Skybox/CubeMap/Materials/Sky_Anime_18_day_a.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Free Stylized Skybox/CubeMap/Materials/Sky_Anime_18_day_a.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Free Stylized Skybox/CubeMap/Materials/Sky_LowPoly_01_Day_a.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Free Stylized Skybox/CubeMap/Materials/Sky_LowPoly_01_Day_a.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Free Stylized Skybox/CubeMap/Materials/Sky_LowPoly_02_Night_a.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Free Stylized Skybox/CubeMap/Materials/Sky_LowPoly_02_Night_a.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Free Stylized Skybox/CubeMap/Textures.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Free Stylized Skybox/CubeMap/Textures/Sky_Anime_03_Day_a.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Free Stylized Skybox/CubeMap/Textures/Sky_Anime_03_Day_a.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Free Stylized Skybox/CubeMap/Textures/Sky_Anime_11_morning_a.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Free Stylized Skybox/CubeMap/Textures/Sky_Anime_11_morning_a.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Free Stylized Skybox/CubeMap/Textures/Sky_Anime_15_Day_a.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Free Stylized Skybox/CubeMap/Textures/Sky_Anime_15_Day_a.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Free Stylized Skybox/CubeMap/Textures/Sky_Anime_18_day_a.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Free Stylized Skybox/CubeMap/Textures/Sky_Anime_18_day_a.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Free Stylized Skybox/CubeMap/Textures/Sky_LowPoly_01_Day_a.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Free Stylized Skybox/CubeMap/Textures/Sky_LowPoly_01_Day_a.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Free Stylized Skybox/CubeMap/Textures/Sky_LowPoly_02_Night_a.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Free Stylized Skybox/CubeMap/Textures/Sky_LowPoly_02_Night_a.png.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Free Stylized Skybox/Panoramic.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Free Stylized Skybox/Panoramic/Materials.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Free Stylized Skybox/Panoramic/Materials/Sky_Anime_03_Day_a.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Free Stylized Skybox/Panoramic/Materials/Sky_Anime_03_Day_a.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Free Stylized Skybox/Panoramic/Materials/Sky_Anime_11_morning_a.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Free Stylized Skybox/Panoramic/Materials/Sky_Anime_11_morning_a.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Free Stylized Skybox/Panoramic/Materials/Sky_Anime_15_Day_a.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Free Stylized Skybox/Panoramic/Materials/Sky_Anime_15_Day_a.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Free Stylized Skybox/Panoramic/Materials/Sky_Anime_18_day_a.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Free Stylized Skybox/Panoramic/Materials/Sky_Anime_18_day_a.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Free Stylized Skybox/Panoramic/Materials/Sky_LowPoly_01_Day_a.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Free Stylized Skybox/Panoramic/Materials/Sky_LowPoly_01_Day_a.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Free Stylized Skybox/Panoramic/Materials/Sky_LowPoly_02_Night_a.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Free Stylized Skybox/Panoramic/Materials/Sky_LowPoly_02_Night_a.mat.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Free Stylized Skybox/Panoramic/Textures.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Free Stylized Skybox/Panoramic/Textures/Sky_Anime_03_Day_a.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Free Stylized Skybox/Panoramic/Textures/Sky_Anime_03_Day_a.png.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Free Stylized Skybox/Panoramic/Textures/Sky_Anime_11_morning_a.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Free Stylized Skybox/Panoramic/Textures/Sky_Anime_11_morning_a.png.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Free Stylized Skybox/Panoramic/Textures/Sky_Anime_15_Day_a.png" beforeDir="false" />
@@ -105,52 +55,58 @@
       <change beforePath="$PROJECT_DIR$/Assets/Free Stylized Skybox/Panoramic/Textures/Sky_LowPoly_01_Day_a.png.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Free Stylized Skybox/Panoramic/Textures/Sky_LowPoly_02_Night_a.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Free Stylized Skybox/Panoramic/Textures/Sky_LowPoly_02_Night_a.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Arrow.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Arrow.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Arrow.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Arrow.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Metall 1.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Metall 1.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Metall.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Metall.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Road.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Road.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Saw.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Saw.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Saw.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Saw.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/SkyBox/Textures/Sky_Anime_03_Day_a.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/SkyBox/Textures/Sky_Anime_03_Day_a.png.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/GameTilesProps/Fence.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/GameTilesProps/Fence.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/GameTilesProps/RotateLeft.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/GameTilesProps/RotateLeft.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/GameTilesProps/RotateRight.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/GameTilesProps/RotateRight.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/GameTilesProps/Saws.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/GameTilesProps/Saws.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/GameTilesProps/SimpleRoad.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/GameTilesProps/SimpleRoad.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Resources/Dtos/PlayerStats.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Dtos/PlayerStats.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/GameScene/PlayerSpawner.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/GameScene/PlayerSpawner.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/PlayerCharacter/Character Camera.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/PlayerCharacter/Character Camera.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/PlayerCharacter/CharacterModel.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/PlayerCharacter/CharacterModel.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/GameScene/GameCanvas.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/GameScene/GameCanvas.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/GameScene/GameCreator.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/GameScene/GameCreator.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/PlayerCharacter/PlayerCameraHolder.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/PlayerCharacter/PlayerCameraHolder.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Resources/PlayerCharacter/PlayerCharacter.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/PlayerCharacter/PlayerCharacter.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Resources/RoadTiles/BaseTile.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/RoadTiles/BaseTile.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Resources/RoadTiles/Variants/BigGap.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/RoadTiles/Variants/BigGap.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/RoadTiles/Variants/FenceTile.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/RoadTiles/Variants/FenceTile.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Resources/RoadTiles/Variants/GapTile.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/RoadTiles/Variants/GapTile.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Resources/RoadTiles/Variants/RotateLeftTile.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/RoadTiles/Variants/RotateLeftTile.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Resources/RoadTiles/Variants/RotateRightTile.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/RoadTiles/Variants/RotateRightTile.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/RoadTiles/Variants/SawTile.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/RoadTiles/Variants/SawTile.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/GameScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GameScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Initializers/GameCreator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Initializers/GameCreator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/IMove.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/IMove.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Common/CustomDictionary.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Common/CustomDictionary.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Common/IInitialize.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Common/IInitialize.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Initializers.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Initializers/GameCreator.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Initializers/GameCreator.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Initializers/ICreator.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Initializers/ICreator.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/IPlayerModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/IPlayerModel.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/IPlayerPresenter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/IPlayerPresenter.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/IPlayerView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/IPlayerView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerCreator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerCreator.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerCameraHolder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerCameraHolder.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerCreator.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerCreator.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerModel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerMovement.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerPresenter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerPresenter.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Road/IRoadGenerator.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Road/IRoadGenerator.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Road/RoadGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Road/RoadGenerator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Road/Tiles/Rotator/BaseOnTriggerAction.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Road/Tiles/Rotator/BaseOnTriggerAction.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Road/Tiles/Rotator/DamageBlock.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Road/Tiles/Rotator/DamageBlock.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Road/Tiles/Rotator/RotatorTile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Road/Tiles/Rotator/RotatorTile.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Road/Tiles/SimpleTile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Road/Tiles/SimpleTile.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Road/Tiles/TileType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Road/Tiles/TileType.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/DamageEffectUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/DamageEffectUI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/DamageImageEffect.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/DamageImageEffect.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/GameCanvasCreator.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/GameCanvasCreator.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -170,20 +126,24 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="mock://F:/UnityProject/TestTasks/TestTaskPlaymous/Assets/Plugins/UniRx/Scripts/Observer.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Road/Tiles/Rotator/RotatorTile.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://F:/UnityProject/TestTasks/TestTaskPlaymous/Assets/Scripts/Player/PlayerView.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Road/RoadGenerator.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://F:/UnityProject/TestTasks/TestTaskPlaymous/Assets/Scripts/Initializers/GameCreator.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Road/Tiles/SimpleTile.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://F:/UnityProject/TestTasks/TestTaskPlaymous/Assets/Scripts/Player/PlayerController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5ddb5fa70dfe40d2818192400111b9ec2aa00/6d/04fcc668/DOTween.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://F:/UnityProject/TestTasks/TestTaskPlaymous/Assets/Scripts/Road/Tiles/Rotator/RotatorTile.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Utilities/Paths.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Boosters/BoosterManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://F:/UnityProject/TestTasks/TestTaskPlaymous/Assets/Plugins/UniRx/Scripts/Observer.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerAnimation.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Common/BaseOnTriggerAction.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock://F:/UnityProject/TestTasks/TestTaskPlaymous/Assets/Scripts/Road/RoadGenerator.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://F:/UnityProject/TestTasks/TestTaskPlaymous/Assets/Prefabs/GameTilesProps/RotateLeft.prefab" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Initializers/GameCreator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/IPlayerModel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/f712b1dc50b4468388b9c5f95d0d0eaf159e00/a0/deb69b41/MonoBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Inspection/GraphNestEditor.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://F:/UnityProject/TestTasks/TestTaskPlaymous/Assets/Scripts/Player/PlayerMovement.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/GameCanvasCreator.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://F:/UnityProject/TestTasks/TestTaskPlaymous/Assets/Scripts/Road/RoadGenerator.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://F:/UnityProject/TestTasks/TestTaskPlaymous/Assets/Scripts/Road/IRoadGenerator.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/UIBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="2P3fRDsjV9OIKcMYnvuIz2skbS8" />
   <component name="ProjectViewState">
@@ -191,6 +151,8 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.34994584" />
+    <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.0" />
     <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
@@ -214,10 +176,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="10340">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="10340" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -235,7 +197,8 @@
       <updated>1682690678740</updated>
       <workItem from="1682690702772" duration="19299000" />
       <workItem from="1682715939912" duration="204000" />
-      <workItem from="1682783432471" duration="15144000" />
+      <workItem from="1682783432471" duration="15877000" />
+      <workItem from="1682861446456" duration="33346000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1682690741692</created>
@@ -265,7 +228,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682716124661</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="feat: add map generation, damage taking and game creating">
+      <created>1682804510835</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1682804510835</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -292,6 +262,7 @@
     <MESSAGE value="feat: add basig game tiles" />
     <MESSAGE value="feat: import UniRx and UniTask" />
     <MESSAGE value="feat: add map generator, tiles, and player" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add map generator, tiles, and player" />
+    <MESSAGE value="feat: add map generation, damage taking and game creating" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: add map generation, damage taking and game creating" />
   </component>
 </project>

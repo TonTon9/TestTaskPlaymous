@@ -8,5 +8,4 @@ namespace Road
         public K Key;
         public V Value;
     }
-
 }

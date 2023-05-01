@@ -13,7 +13,10 @@ namespace Component
             if (!_isActivated &&  collider.TryGetComponent(out IPlayerView view))
             {
                 _isActivated = true;
-                view.TakeDamage(DAMAGE);
+                if (!view.PlayerModel.IsImmune.Value)
+                {
+                    view.PlayerPresenter.TakeDamage(DAMAGE);
+                }
             }
         }
     }

@@ -1,22 +1,16 @@
 ﻿using System;
-using Component;
 using UnityEngine;
 
 namespace Player.Entity
 {
-    public interface IPlayerView : IDamagable
+    public interface IPlayerView
     {
         public event Action OnTap;
-        public event Action OnDoubleTap;
         public event Action OnRun;
 
         IPlayerModel PlayerModel { get; }
-
-        public event Action<RotateType> OnRotate;
+        IPlayerPresenter PlayerPresenter { get; }
 
         public GameObject GetOwnGameObject();
-
-        public void Rotate(RotateType rotateType);
     }
-
 }

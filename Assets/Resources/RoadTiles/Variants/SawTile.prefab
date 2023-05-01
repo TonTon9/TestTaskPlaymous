@@ -194,7 +194,15 @@ PrefabInstance:
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6359639777713851085, guid: e5b3e0595589c3f4e87d899fbf430dfd, type: 3}
+      propertyPath: <TileName>k__BackingField
+      value: Saw
+      objectReference: {fileID: 0}
+    - target: {fileID: 6359639777713851085, guid: e5b3e0595589c3f4e87d899fbf430dfd, type: 3}
       propertyPath: <TileType>k__BackingField
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6813255640603440693, guid: e5b3e0595589c3f4e87d899fbf430dfd, type: 3}
+      propertyPath: m_LocalPosition.z
       value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []

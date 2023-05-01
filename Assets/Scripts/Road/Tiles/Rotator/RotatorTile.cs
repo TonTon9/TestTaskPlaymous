@@ -14,9 +14,8 @@ namespace Component
             if (!_isActivated &&  collider.TryGetComponent(out IPlayerView view))
             {
                 _isActivated = true;
-                view.Rotate(_rotateType);
+                view.PlayerPresenter.Rotate(_rotateType);
             }
         }
     }
-
 }

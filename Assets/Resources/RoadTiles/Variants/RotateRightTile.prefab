@@ -160,6 +160,18 @@ PrefabInstance:
       propertyPath: <TileType>k__BackingField
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 6813255640603440693, guid: e5b3e0595589c3f4e87d899fbf430dfd, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6813255640603440693, guid: e5b3e0595589c3f4e87d899fbf430dfd, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6813255640603440693, guid: e5b3e0595589c3f4e87d899fbf430dfd, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7756566260398505516, guid: e5b3e0595589c3f4e87d899fbf430dfd, type: 3}
       propertyPath: m_Size.x
       value: 0.7242072
@@ -225,7 +237,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6926343130187133676, guid: d5e5577b554809d4d8b192bfd80c2475, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.1
+      value: 1.68
       objectReference: {fileID: 0}
     - target: {fileID: 6926343130187133676, guid: d5e5577b554809d4d8b192bfd80c2475, type: 3}
       propertyPath: m_LocalRotation.w

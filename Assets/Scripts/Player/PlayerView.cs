@@ -1,5 +1,7 @@
 ﻿using System;
 using Component;
+using Cysharp.Threading.Tasks;
+using Game;
 using Player.Entity;
 using UnityEngine;
 
@@ -8,40 +10,24 @@ namespace Player.Movement
     public class PlayerView : MonoBehaviour, IPlayerView
     {
         public IPlayerModel PlayerModel { get; private set; }
-        private IPlayerPresenter _playerPresenter;
+        public IPlayerPresenter PlayerPresenter { get; private set; }
 
         public event Action OnTap = delegate { };
-        public event Action OnDoubleTap = delegate { };
-        public event Action<RotateType> OnRotate = delegate {};
         public event Action OnRun;
 
-        private float _lastTapTime;
-        private float _doubleTapThreshold = 0.3f;
-        
         public void Init(IPlayerPresenter playerPresenter, IPlayerModel model)
         {
-            _playerPresenter = playerPresenter;
+            PlayerPresenter = playerPresenter;
             PlayerModel = model;
-        }
-
-        public void Rotate(RotateType rotateType)
-        {
-            OnRotate?.Invoke(rotateType);
-        }
-        
-        public void TakeDamage(int damage)
-        {
-            _playerPresenter.TakeDamage(damage);
         }
 
         private void Update()
         {
+            if(GameStateManager.Instance == null ||
+               GameStateManager.Instance.CurrentGameState != GameStates.Game ||
+               !PlayerModel.IsAlive.Value) return;
+
             OnRun?.Invoke();
-            if (!PlayerModel.IsAlive.Value)
-            {
-                return;
-            }
-            
             if (IsMobilePlayer())
             {
                 if (Input.touchCount > 0)
@@ -61,22 +47,12 @@ namespace Player.Movement
             }
         }
 
-        private void DetectTap()
+        private async void DetectTap()
         {
+            await UniTask.WaitUntil(() => GameStateManager.Instance != null);
+            
+            if(GameStateManager.Instance.CurrentGameState != GameStates.Game || !PlayerModel.IsAlive.Value) return;
             OnTap?.Invoke();
-            CheckOnDoubleTap();
-        }
-
-        private void CheckOnDoubleTap()
-        {
-            if (Time.time - _lastTapTime <= _doubleTapThreshold)
-            {
-                _lastTapTime = 0;
-                OnDoubleTap?.Invoke();
-            } else
-            {
-                _lastTapTime = Time.time;
-            }
         }
 
         private bool IsMobilePlayer()

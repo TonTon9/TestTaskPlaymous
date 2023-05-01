@@ -18,7 +18,7 @@ namespace Player.Camera
         public void Init(IPlayerView playerView)
         {
             _playerView = playerView;
-            _playerView.OnRotate += Rotate;
+            _playerView.PlayerPresenter.OnRotate += Rotate;
         }
 
         private void Rotate(RotateType rotateType)
@@ -37,7 +37,7 @@ namespace Player.Camera
                 {
                     transform.Rotate(0,-_rotateSpeed, 0);
                 }
-                yield return null;
+                yield return new WaitForFixedUpdate();
             }
         }
 
@@ -52,7 +52,7 @@ namespace Player.Camera
             {
                 StopCoroutine(_rotateCoroutine);
             }
-            _playerView.OnRotate -= Rotate;
+            _playerView.PlayerPresenter.OnRotate -= Rotate;
         }
     }
 }
