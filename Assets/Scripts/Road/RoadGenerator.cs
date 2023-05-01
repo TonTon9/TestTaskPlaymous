@@ -55,6 +55,7 @@ namespace Road
             SpawnNewTile(GetRandomTile());
         }
 
+        //todo: Change instantiate to object pool
         private void SpawnNewTile(SimpleTile tile)
         {
             if (_lastTile == null)
@@ -83,21 +84,6 @@ namespace Road
             {
                 _countOfTilesAfterLastCorner++;
             }
-        }
-
-        private void SpawnTile(SimpleTile tile)
-        {
-            if (_lastTile == null)
-            {
-                _lastTile = Instantiate(tile);    
-            } else
-            {
-                _lastTile = Instantiate(tile, _lastTile.NextTileSpawnPoint.position, _lastTile.NextTileSpawnPoint.rotation);   
-            }
-
-            _countOfSpawnedTiles++;
-            _spawnedTiles.Add(_lastTile);
-            OnTileSpawned?.Invoke(_lastTile);
         }
 
         private void ActionOnPlayerExitTile(SimpleTile tile)
